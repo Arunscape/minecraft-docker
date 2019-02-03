@@ -4,12 +4,16 @@ minecraft-server:
 
   environment:
     EULA: "TRUE"
-    LEVEL_SEED: "499177056700550"
+    SEED: "499177056700550"
     ONLINE_MODE: "false"
-    DIFFICULTY: "3"
+    DIFFICULTY: "hard"
     MOTD: "What do all minecraft trees have? SQUARE ROOTS"
     SNOOPER_ENABLED: "false"
-    GAMEMODE: "0"
+    MODE: "survival"
+    MAX_MEMORY: 6G
+  
+  volumes:
+    - "./data:/data"
 
   image: itzg/minecraft-server
 
