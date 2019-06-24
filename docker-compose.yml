@@ -21,4 +21,4 @@ minecraft-server:
 
   tty: true
   stdin_open: true
-  restart: unless_stopped
+  restart: unless-stopped
