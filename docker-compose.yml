@@ -5,7 +5,7 @@ minecraft-server:
   environment:
     EULA: "TRUE"
     SEED: "499177056700550"
-    ONLINE_MODE: "false"
+    ONLINE_MODE: "true"
     DIFFICULTY: "hard"
     MOTD: "What do all minecraft trees have? SQUARE ROOTS"
     SNOOPER_ENABLED: "false"
@@ -21,4 +21,4 @@ minecraft-server:
 
   tty: true
   stdin_open: true
-  restart: always
+  restart: unless_stopped
