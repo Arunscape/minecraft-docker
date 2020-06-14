@@ -1,0 +1,100 @@
+# 
+# Revamped by: ShaneBee
+# 
+# Issues: Please report issues on the BitBucket issue tracker @ https://bitbucket.org/ShaneBeeStudios/hungergames/issues?status=new&status=open
+# Updates: Can be found on SpigotMC @ --- coming soon
+# 
+# More Info: See the wiki for more info on this config @ https://bitbucket.org/ShaneBeeStudios/HungerGames/wiki/Config.yml
+
+settings:
+  spawn-mobs: true
+  spawn-mobs-interval: 35
+  free-roam: 25
+  bossbar-countdown: true
+  trackingstick-uses: 8
+  players-for-trackingstick: 5
+  max-chestcontent: 5
+  min-chestcontent: 1
+  max-bonus-chestcontent: 5
+  min-bonus-chestcontent: 1
+  teleport-at-end: false
+  teleport-at-end-time: 30
+  max-team-size: 3
+reward:
+  enabled: true
+  cash: 500
+  commands:
+  - none
+  messages:
+  - none
+random-chest:
+  enabled: false
+  interval: 30
+  max-chestcontent: 9
+rollback:
+  allow-block-break: true
+  blocks-per-second: 5000
+  protect-during-cooldown: true
+  fix-leaves: true
+  prevent-trampling: true
+  editable-blocks:
+  - ALL
+world-border:
+  enabled: true
+  initiate-on-start: true
+  countdown-start: 60
+  countdown-end: 30
+  final-border-size: 30
+  center-on-first-spawn: false
+spectate:
+  enabled: true
+  death-to-spectate: true
+  hide-spectators: true
+  fly: true
+  chat: false
+mcmmo:
+  use-skills: false
+  gain-experience: false
+kits:
+  bowman:
+    permission: none
+    helmet: LEATHER_HELMET color:red
+    chestplate: LEATHER_CHESTPLATE color:red
+    leggings: LEATHER_LEGGINGS color:red
+    boots: LEATHER_BOOTS color:red
+    items:
+    - BOW name:&2Lucky_Bow
+    - ARROW 64 name:&aLucky_Arrow
+    - POTION potion:HEAL:60:0 2 name:&bHealing
+  survivor:
+    permission: none
+    helmet: LEATHER_HELMET
+    chestplate: LEATHER_CHESTPLATE color:green
+    leggings: LEATHER_LEGGINGS color:green
+    boots: LEATHER_BOOTS
+    items:
+    - STONE_SWORD 1 name:&7Survival_Sword
+    - BREAD 4 name:&6Peasant's_Bread
+    - POTION potion:HEAL:60:0 2 name:&bHealing
+  pro:
+    permission: none
+    helmet: TURTLE_HELMET name:&2Turtle_Shell
+    items:
+    - IRON_SWORD 1
+    - BREAD 4 name:&8Pro_Bread
+    - POTION potion:HEAL:60:1 2 name:&bSuper_Healing
+  ninja:
+    permission: none
+    items:
+    - POTION potion:INVISIBILITY:6000:0 1
+    potion-effects:
+    - SPEED:1:forever
+  miner:
+    permission: none
+    helmet: IRON_HELMET enchant:blast_protection:3
+    items:
+    - TORCH 64
+    - DIAMOND_PICKAXE 1
+    - POTION potion:HEAL:60:0 1 name:&bHealing
+    - BREAD 4
+    - TNT 5

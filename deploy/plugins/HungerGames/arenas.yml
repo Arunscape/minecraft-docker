@@ -1,0 +1,32 @@
+arenas:
+  hungergames:
+    bound:
+      world: world
+      x: -10291
+      y: 0
+      z: -9685
+      x2: 9709
+      y2: 255
+      z2: 10315
+    info:
+      cost: 0
+      timer: 3600
+      min-players: 4
+      max-players: 8
+    commands:
+    - none
+    spawns:
+    - world:-321:64:315:-291:315
+    - world:-291:64:285:-291:315
+    - world:-261:64:315:-291:315
+    - world:-291:64:345:-291:315
+    - world:-270:64:294:-291:315
+    - world:-270:64:336:-291:315
+    - world:-312:64:336:-291:315
+    - world:-312:64:294:-291:315
+    lobbysign: world:19884:67:20013
+    border:
+      center: world:-291:64:315
+      size: 20
+      countdown-start: 2000
+      countdown-end: 120

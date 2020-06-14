@@ -4,16 +4,18 @@ minecraft-server:
 
   environment:
     EULA: "TRUE"
-    SEED: "499177056700550"
     ONLINE_MODE: "true"
     DIFFICULTY: "hard"
-    MOTD: "What do all minecraft trees have? SQUARE ROOTS"
+    MOTD: "May the odds be ever in your favour"
     SNOOPER_ENABLED: "false"
     MODE: "survival"
-    MAX_MEMORY: 6G
+    MAX_MEMORY: 7600M
+    TYPE: SPIGOT
+    SPAWN_PROTECTION: 0
   
   volumes:
     - "./data:/data"
+    - "./plugins:/data/plugins"
 
   image: itzg/minecraft-server
 
@@ -22,3 +24,4 @@ minecraft-server:
   tty: true
   stdin_open: true
   restart: unless-stopped
+
